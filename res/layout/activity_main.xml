@@ -1,0 +1,71 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_margin="10dp"
+    android:orientation="vertical"
+    tools:context=".MainActivity" >
+
+    <TextView
+        android:id="@+id/tvItemContent"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Add New Note"
+        android:textAppearance="?android:attr/textAppearanceMedium" />
+
+    <EditText
+        android:id="@+id/title"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:hint="Type Title" >
+
+        <requestFocus />
+    </EditText>
+
+    <EditText
+        android:id="@+id/content"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:hint="Type Content" />
+
+    <Button
+        android:id="@+id/button_add"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:text="Add Note" />
+
+    <TextView
+        android:id="@+id/tvAddPlateTitle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Enter the Id of Note to Delete or Update"
+        android:textAppearance="?android:attr/textAppearanceMedium" />
+
+    <EditText
+        android:id="@+id/delete_id"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:hint="Enter the Id of Note to Delete or Update" />
+
+    <Button
+        android:id="@+id/button_update"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:text="Update Note" />
+
+    <Button
+        android:id="@+id/button_delete"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:text="Delete Note" />
+
+    <Button
+        android:id="@+id/show_notes"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:text="Show Saved Notes" />
+
+</LinearLayout>
